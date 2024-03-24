@@ -1,0 +1,139 @@
+.journey{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background: rgb(61, 60, 60);
+    color: white;
+}
+.journey-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+    height: auto; 
+}
+.journey-left span{
+    font-size: 40px;
+    font-weight: 600;
+}
+.journey-rigth{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;  
+    margin: 10px;
+    cursor: pointer;
+}
+.jurn-card{
+    display: flex;
+    flex-direction: column;
+     height: 400px;
+     width: 250px;
+     background: gray;
+     gap: 10px;
+     padding: 10px;
+}
+.jurn-card:hover{
+    scale: 1.1;
+    background: gold;
+}
+.jurn-card h1{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.jurn-card span{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  
+}
+.jurn-card p{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 5px;
+
+}
+.jurn-card h6{
+    font-size: 15px;
+    margin: 10px;
+    padding: 0;
+    gap: 5px;
+}
+.jurn-card button{
+    height: 40px;
+    width: 200px;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:700px){
+    .journey{
+   
+        height: auto;
+        width: auto;  
+    }
+    .journey-left{
+        display: flex;
+       flex-direction: column;
+       gap: 5px;
+       margin-top: 10px;
+    }
+    .journey-left span:nth-of-type(1){
+        font-size: 30px;
+        font-weight: 600;   
+    }
+    .journey-left span:nth-of-type(2){
+        font-size: 30px;
+        font-weight: 600;   
+    }
+    .journey-rigth{
+       display: flex;
+       flex-direction: column;
+    }
+
+  
+}
+
+@media (min-width:700px) and (max-width:1024px) {
+    .journey{
+        
+        height: auto;
+        width: auto;
+     
+      
+    }
+    .journey-left{
+       display: flex;
+       flex-direction: column;
+        width: 90%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+       gap: 5px;
+      
+    }
+    .journey-left span{
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .journey-rigth{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+        justify-content: center; 
+        gap: 20px;  
+        margin: 10px;
+        cursor: pointer;
+    }
+}

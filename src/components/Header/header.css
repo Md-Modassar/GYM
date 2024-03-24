@@ -1,0 +1,128 @@
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    background: white;
+    z-index: 200;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    width: 4rem;
+    background: gold;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.logo span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: whitesmoke;
+    
+}
+.mobile-option{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+    right: 10px;
+    padding: 2px;
+    background: black;
+    color: white;
+    margin-top: 198px;
+    position: absolute;
+    z-index: 100;
+}
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    
+}
+.mobile-option span{
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    
+}
+.mobile-option span:hover{
+    display: flex;
+    background: white;
+    width: 100%;
+    color: gold;
+
+}
+.option span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.h-button {
+    margin-right: 20px;
+}
+.h-button button{
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+}
+@media (max-width: 700px) {
+   .option{
+    display: none;
+   }
+   .menu{
+    display: flex;
+   }
+   .header{
+    display: flex;
+    width: 100vw; /* Set width to 100% to cover the entire viewport width */
+    height: 10vh;
+
+    position: fixed;
+    z-index: 200;
+    background: white; /* Background color */
+    border-bottom: 1px solid gray;
+
+    box-sizing: border-box;
+   }
+   .logo{
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    width: 4rem;
+    background: gold;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+}
+.button {
+    margin-right: 10px;
+}
+
+}
+
+@media (min-width:700px) and (max-width:1024px) {
+    .header{
+        display: flex;
+        height: 10vh;
+        width: 100vw;
+        position: fixed;
+    }
+}

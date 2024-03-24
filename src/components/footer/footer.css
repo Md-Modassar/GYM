@@ -1,0 +1,113 @@
+.footer{
+    display: flex;
+    height: auto;
+    width: 100vw;
+    align-items: center;
+    background:rgb(66, 66, 66);
+    color: white;
+  
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.footer-left span:nth-of-type(1){
+    font-size: 40px;
+    font-weight: 600;
+}
+.footer-left span:nth-of-type(2){
+    font-size: 40px;
+    font-weight: 700;
+}
+.footer-right{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.message{
+    display: flex;
+    height: 50px;
+    width: 350px;
+    background: gray;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 10px;
+}
+.message input{
+    height: 40px;
+    width: 200px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+.button{
+    height: 40px;
+    width: 100px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    gap: 5px;
+}
+form input{
+    height: 30px;
+    width: 250px;
+    background:white;
+    
+}
+form textarea{
+    height: 200px;
+    width: 250px;
+}
+
+@media (max-width:700px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        gap: 50px;
+        padding: 10px;
+    }
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        gap: 20px;
+    }
+    .footer-left span:nth-of-type(1){
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .footer-left span:nth-of-type(2){
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+@media (min-width:700px) and(max-width:1024px) {
+    .footer{
+        display: flex;
+        width: auto;
+        height: 100vh;
+
+     padding-top: 100px;
+     background: red;
+    }
+}

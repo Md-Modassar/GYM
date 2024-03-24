@@ -1,0 +1,205 @@
+.program{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 80vh;
+    align-items: center;
+    background: rgb(65, 64, 64);
+    
+}
+.program-left{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.photo1{
+    height:13rem;
+    width: 20.7rem;;
+     left:270px;
+     top:50px;
+}
+.photo2{
+    height:23rem;
+    width: 15rem;;
+     left:20px;
+     top:50px;
+}
+.photo3{
+    height:10rem;
+    width: 10rem;;
+     left:270px;
+     top:260px;
+}
+.photo4{
+    height:10rem;
+    width: 10rem;;
+     left:440px;
+     top:260px;
+}
+
+.iner-1{
+    display: flex;
+    flex-direction: column;
+
+    height: 400px;
+    width: 100px;
+}
+.iner-2{
+    display: flex;
+}
+.program-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 5px; 
+    color: white;
+}
+.program-right h4 {
+    margin: 0; 
+    padding: 0;
+    font-size: 55px;
+    font-family: "Archivo Narrow", sans-serif; 
+  }
+  .quest-mark{
+   font-size: 50px;
+  }
+.program-right span:nth-of-type(1){
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: gold;
+}
+.list{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+@media (max-width:700px) {
+    .program {
+        flex-direction: column;
+        height: auto;
+    }
+    .program-left, .program-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Take full width on smaller screens */
+    }
+    .photo1{
+        height:350px;
+        width: 350px;;
+         left: 0px;
+         top:5px;
+    }
+    .photo2{
+        height:350px;
+        width: 350px;;
+         left:0px;
+         top:10px;
+    }
+    .photo3{
+        height:350px;
+        width: 350px;;
+         left:0px;
+         top:10px;
+    }
+    .photo4{
+        height:350px;
+        width: 350px;;
+         left:0px;
+         top:2px;
+    }
+    .program-right{
+       display: flex;
+       flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: start;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .program-right h4 {  
+        font-size: 30px;
+        font-family: "Archivo Narrow", sans-serif; /* Remove any padding */
+      }
+      .quest-mark{
+       font-size: 50px;
+      }
+      .list{
+       width: 80%;
+       align-items: center;
+        gap: 5;
+        font-size: 15px;
+        font-weight: 600;  
+    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .program {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        gap: 10px;
+    }
+    .program-left{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 98%;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+     
+        position: relative;
+    }
+    .photo1{
+        height:15rem;
+        width: 28rem;;
+         left:300px;
+         top:50px;
+    }
+    .photo2{
+        height:30rem;
+        width: 16rem;;
+         left:20px;
+         top:50px;
+    }
+    .photo3{
+        height:15rem;
+        width: 15rem;;
+         left:280px;
+         top:300px;
+    }
+    .photo4{
+        height:15rem;
+        width: 15rem;;
+         left:515px;
+         top:300px;
+    }
+    .program-right{
+        display: flex;
+        height: auto;
+        width: auto;
+        align-items: start; 
+     
+    }
+    .program-right h4 {
+    
+        font-size: 70px;
+      
+      }
+      .list{
+         gap: 5;
+         font-size: 20px;
+         font-weight: 600;  
+     }
+}

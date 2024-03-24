@@ -1,0 +1,156 @@
+.instrection{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 100vw;
+    background: rgb(75, 74, 74);
+    color: white; 
+    align-items: center; 
+    justify-content: center;
+     
+}
+.inst-title{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+   gap: 10rem;
+}
+.inst-title span{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Lato" sans-serif;
+}
+
+.inst-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+    width: 80%;
+    align-self: center;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    align-items: start;
+    background: gray;
+    padding: 10px;
+
+}
+
+.card:hover{
+    background:rgb(194, 194, 68);
+    cursor: pointer;
+    scale: 1.1;
+
+}
+h3{
+    font-size: 16px;
+}
+.card p{
+    font-size: 12px;
+}
+@media (max-width: 700px){
+    .instrection{
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        width: auto;
+        background: rgb(75, 74, 74);
+        color: white; 
+        align-items: center; 
+        justify-content: center;
+         
+    }
+    .inst-title {
+        flex-direction: column;
+        gap: 1rem; /* Adjust the gap to your preference */
+        height: auto;
+        padding: 1rem; /* Add padding to create space */
+        margin-bottom: 1rem; /* Add margin to separate from other elements */
+    }
+    .inst-title span:nth-of-type(3){
+       font-size: 20px;
+    }
+    .inst-title span:nth-of-type(1){
+        font-size: 20px;
+     }
+
+    
+    .inst-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 300px;
+        align-items: start;
+        background: gray;
+        padding: 10px;
+    
+    }
+    
+    .card:hover{
+        background:rgb(194, 194, 68);
+        cursor: pointer;
+        scale: 1.1;
+    
+    }
+   .card h3{
+        font-size: 20px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+
+
+}
+
+@media (min-width:760px)and (max-width:1024px) {
+    .instrection{
+        display: flex;
+        height:auto;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+       
+         
+    }
+    .inst-title {
+        display: flex;
+       
+        height: auto;
+        width: auto;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+    .inst-title span:nth-of-type(3){
+        font-size: 25px;
+     }
+     .inst-title span:nth-of-type(1){
+         font-size: 25px;
+      }
+      .inst-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: auto;
+        height: auto;
+        
+      }
+ 
+}

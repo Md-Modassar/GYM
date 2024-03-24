@@ -1,0 +1,48 @@
+.base{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    background: gray;
+    align-items: center;  
+    justify-content: center;
+    gap: 0;
+}
+.base hr{
+    width: 100%;
+    height: 2px;
+    background: black;
+    border: none;
+}
+.base span{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.inst{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+.lin{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+.git{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+.social{
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
